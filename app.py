@@ -4,7 +4,7 @@ from markupsafe import escape
 from boto3.dynamodb.conditions import Attr
 
 app = Flask(__name__)
-dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
+dynamodb = boto3.resource('dynamodb', region_name='eu-north-1')
 table = dynamodb.Table('CommunityOrders')
 
 # --- HTML TEMPLATES ---
